@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Hind+Siliguri:wght@300;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  min-width: 100%;
+  height: 40px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+.navbar img {
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+
+.navbar .navlink a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.9);
+  padding: 5px 10px;
+  font-family: "Hind Siliguri", sans-serif;
+  transition: all 0.3s;
+}
+.navbar .navlink a:hover {
+  background-color: rgba(48, 45, 45, 0.9);
+  color: white;
+}
+.landing-page {
+  margin-top: 35px;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./aset/pexels-stijn-dijkstra-2674066.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing-page .greeting {
+  font-family: "Hind Siliguri", sans-serif;
+  text-align: center;
+  color: rgba(255, 255, 254, 0.9);
+  line-height: 20px;
+}
+.landing-page .greeting h2 {
+  font-size: 80px;
+  margin: 20px;
+  color: #ff0000;
+}
+
+.landing-page .greeting h2 .indo {
+  font-family: "Dancing Script", cursive;
+  color: white;
+}
+.landing-page .greeting a {
+  line-height: 30px;
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  margin: 20px;
+  text-decoration: none;
+  color: whitesmoke;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  transition: 0.5s;
+}
+.landing-page .greeting a:hover {
+  text-shadow: 1px 1px 10px #03b44d;
+  background-color: rgba(3, 180, 77, 0.4);
+}
+
+.cards {
+  width: 800px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card1,
+.card2,
+.card3 {
+  width: 300px;
+  height: 150px;
+  margin: 0 20px 0 20px;
+  font-family: "Hind Siliguri", sans-serif;
+  color: white;
+  padding: 20px;
+  box-shadow: 0px 30px 10px -20px rgba(0, 0, 0, 0.75);
+  position: relative;
+  bottom: 40px;
+  transition: all 0.3s;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+  transform: translateY(10px);
+  box-shadow: 0 80px 10px -40px rgba(0, 0, 0, 0.15);
+}
+.card1 {
+  background-image: url(./aset/pexels-alexandr-podvalny-2166553.jpg);
+  background-size: cover;
+}
+.card2 {
+  background-image: url("./aset/pexels-greenwish-10482395.jpg");
+  background-size: cover;
+}
+.card3 {
+  background-image: url(./aset/pexels-charl-durand-6476719.jpg);
+  background-size: cover;
+}
+
+.card1 a,
+.card2 a,
+.card3 a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  width: 50px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #d22b2b;
+}
+
+.card1 h4,
+.card2 h4,
+.card3 h4 {
+  font-size: x-large;
+  font-weight: 700;
+}
+.card1 p,
+.card2 p,
+.card3 p {
+  font-size: medium;
+}
+
+.feature {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.text h2,
+.text p {
+  margin: 0 auto;
+  width: 800px;
+  font-family: "Hind Siliguri", sans-serif;
+  text-align: center;
+}
+.text h2 .catalogue {
+  font-family: "Dancing Script", cursive;
+  font-size: x-large;
+}
+.text p {
+  font-weight: 300;
+  padding: 0 100px;
+  font-size: medium;
+}
+
+.facilities {
+  margin: 50px auto;
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.facility {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Hind Siliguri", sans-serif;
+}
+.facilities .facility .icons {
+  font-size: 3em;
+  color: salmon;
+}
+
+.facilities .facility p {
+  font-weight: 300;
+  font-size: medium;
+}
+
+/*PROMO*/
+.content {
+  max-width: 100%;
+  height: 120vh;
+  background-image: url("./aset/bali-pagoda-indonesia.jpg");
+  background-size: cover;
+  background-position: 0 -130px;
+}
+.promo {
+  padding: 100px 100px 10px 150px;
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+.content .promo .hot-promo {
+  display: inline-block;
+  padding-left: 0.5em;
+  width: 90px;
+  height: 20px;
+  background-color: #d22b2b;
+  color: white;
+  line-height: 20px;
+  border-radius: 5px;
+}
+
+.content .promo a {
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px 0 20px;
+  background-color: #5862d6;
+  transition: all 0.3s ease 0s;
+}
+
+.content .promo a:hover {
+  background-color: #6b74d4;
+  box-shadow: 0px 15px 20px rgba(46, 73, 229, 0.4);
+  color: #fff;
+}
+
+.second-card {
+  width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 100px;
+}
+.offer1,
+.offer2,
+.offer3 {
+  width: 33.33%;
+  height: 220px;
+  background-color: whitesmoke;
+  box-shadow: 0 30px 10px -20px rgba(0, 0, 0, 0.75);
+  padding: 30px;
+  line-height: 1em;
+  font-family: "Hind Siliguri", sans-serif;
+  transition: all 0.3s;
+}
+
+.second-card .offer2 {
+  background-color: rgb(232, 232, 232);
+}
+
+.second-card .offer1 span,
+.second-card .offer2 span,
+.second-card .offer3 span {
+  font-size: 2em;
+  color: salmon;
+}
+.second-card .offer1 h3,
+.second-card .offer2 h3,
+.second-card .offer3 h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.second-card .offer1 a,
+.second-card .offer2 a,
+.second-card .offer3 a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #d22b2b;
+  margin-top: 10px;
+  padding-left: 15px;
+  border-radius: 2px;
+}
+
+.offer1:hover,
+.offer2:hover,
+.offer3:hover {
+  background-color: rgb(52, 52, 52);
+  color: white;
+}
+
+.statistic {
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  height: 90vh;
+}
+
+.description {
+  width: 900px;
+  height: 400px;
+  background-color: rgb(232, 232, 232);
+  padding: 70px 20px 20px 20px;
+  font-family: "Hind Siliguri", sans-serif;
+  margin-right: 20px;
+}
+
+.img1,
+.img2,
+.img3 {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  box-shadow: 0 0 20px black;
+}
+.img1 {
+  z-index: 4;
+  top: 50px;
+  right: 60px;
+}
+.img2 {
+  position: relative;
+  z-index: 3;
+  bottom: 200px;
+  left: 30px;
+  transition: all 0.3s;
+}
+.img2:hover {
+  z-index: 4;
+}
+.img3 {
+  z-index: 2;
+  bottom: 600px;
+  left: 70px;
+  transition: all 0.3s;
+}
+.img3:hover {
+  z-index: 4;
+}
+.statistic .description h1 span {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+}
+
+.statistic .description p {
+  font-weight: 300;
+  padding-right: 30px;
+}
+
+.statistic-number {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Hind Siliguri", sans-serif;
+}
+.statistic-number .numbers {
+  margin: -100px 30px 20px;
+  display: flex;
+  flex-direction: row;
+}
+.statistic-number .numbers .data {
+  margin-right: 20px;
+  font-size: large;
+  color: salmon;
+}
+.statistic-number .numbers .desc {
+  line-height: 1.5em;
+  font-weight: lighter;
+}
+
+/*footer*/
+.footer {
+  margin-top: -80px;
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./aset/lake-toba-g76fba22a8_1920-removebg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 250px;
+}
+
+.footer .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Hind Siliguri", sans-serif;
+}
+.footer .heading .head-title {
+  text-align: center;
+}
+.footer .heading .head-title p {
+  font-weight: 300;
+}
+.footer .testimonies img {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.footer .testimonies img:hover {
+  transform: rotate("45deg");
+}
+.footer .testimonies {
+  margin: 80px;
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+}
+
+.footer .testimonies .testimoni1,
+.footer .testimonies .testimoni2 {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  font-weight: 300;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form .heading-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Hind Siliguri", sans-serif;
+}
+.form form {
+  width: 330px;
+  height: 115px;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.75);
+}
+#submit {
+  width: 330px;
+  height: 30px;
+  margin: 10px 0 10px 0;
+  border: none;
+  font-family: "Hind Siliguri", sans-serif;
+  background-color: rgb(210, 43, 43);
+  color: white;
+  transition: all 0.3s;
+}
+
+#submit:hover {
+  background-color: rgb(253, 93, 93);
+}
+
+.form #complain {
+  padding: 10px;
+}
+
+#name {
+  width: 78%;
+}
+
+#email {
+  width: 78%;
+}
+#txtarea {
+  height: 60px;
+}
